@@ -81,15 +81,7 @@ Valida firma, issuer y audiencia.
 No confía en sesiones anteriores.
 
 Rechaza cualquier solicitud sin token válido.
-```
 
-┌──────────────────┐       (JWT)        ┌────────────────────┐
-│   Cliente Web     │ ───────────────▶  │  Backend Spring    │
-│ HTML + JS + Auth0 │                   │  Validación JWT     │
-└──────────────────┘ ◀───────────────   │  Guarda mensaje     │
-            ▲          Últimos 10       │  Devuelve lista     │
-            └───────────────────────────┘
-```
 🔐 Implementación de Zero Trust
 ✔ Never trust, always verify
 
@@ -128,7 +120,6 @@ Se debe autorizar la aplicación para el funcionamiento y evitar el error 401
 Validación por CURL
 
 <img width="1454" height="391" alt="image" src="https://github.com/user-attachments/assets/f810441f-e599-4462-8317-486400114d23" />
-
 
 Incluso si el usuario refresca la página (F5), el cliente debe obtener un token nuevamente.
 Esto es el comportamiento esperado bajo Zero Trust.
@@ -206,6 +197,11 @@ Usar Live Server o similar:
     http://127.0.0.1:5500/client/index.html
 
 ------------------------------------------------------------------------
+
+### Aplicación en ejecución
+
+<img width="792" height="644" alt="image" src="https://github.com/user-attachments/assets/a4df97a1-6d88-4a8c-9d9b-71c53a585d38" />
+
 
 ## Referencias
 
